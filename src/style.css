@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("assets/fonts/Inter-VariableFont.ttf") format("truetype");
+  src: url("./assets/fonts/Inter-VariableFont.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Merriweather";
-  src: url("assets/fonts/Merriweather-VariableFont.ttf") format("truetype");
+  src: url("./assets/fonts/Merriweather-VariableFont.ttf") format("truetype");
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Roboto Mono";
-  src: url("assets/fonts/RobotoMono-VariableFont.ttf") format("truetype");
+  src: url("./assets/fonts/RobotoMono-VariableFont.ttf") format("truetype");
   font-weight: 100 700;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--font-md);
   line-height: 1.5;
 }
@@ -134,4 +134,39 @@ ul,
 ol {
   padding: 0;
   list-style: none;
+}
+
+* {
+  border: 2px solid red;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: var(--font-sans);
+}
+
+header {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--font-3xl);
+  align-self: center;
+  justify-self: center;
+}
+
+.home {
+  background-color: purple;
+}
+
+.menu {
+  background-color: aqua;
+}
+
+.about {
+  background-color: antiquewhite;
 }
